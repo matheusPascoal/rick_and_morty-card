@@ -1,23 +1,23 @@
 import 'dart:math';
 
-import 'package:chucknoris/model/chuckModel.dart';
+import 'package:chucknoris/model/RickandMortyModel.dart';
 import 'package:chucknoris/repository/chuckRepository.dart';
 import 'package:chucknoris/widgets/widgetText%20copy.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ChuckPage extends StatefulWidget {
-  const ChuckPage({Key? key}) : super(key: key);
+class RickandMorty extends StatefulWidget {
+  const RickandMorty({Key? key}) : super(key: key);
 
   @override
-  State<ChuckPage> createState() => _ChuckPageState();
+  State<RickandMorty> createState() => _RickandMortyState();
 }
 
-class _ChuckPageState extends State<ChuckPage> {
-  var chuckModel = ChuckModel();
+class _RickandMortyState extends State<RickandMorty> {
+  var rickAndMortyModel = RickandMortyModel();
   getUser() async {
     var result = await ChuckRepository().getUser();
-    chuckModel = result;
+    rickAndMortyModel = result;
     setState(() {});
   }
 
@@ -42,7 +42,7 @@ class _ChuckPageState extends State<ChuckPage> {
                 height: 150,
               ),
               WidgetText(
-                chuck: chuckModel,
+                chuck: rickAndMortyModel,
               ),
             ],
           ),

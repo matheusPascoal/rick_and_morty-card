@@ -1,9 +1,9 @@
-import 'package:chucknoris/model/chuckModel.dart';
+import 'package:chucknoris/model/RickandMortyModel.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WidgetText extends StatefulWidget {
-  final ChuckModel? chuck;
+  final RickandMortyModel? chuck;
 
   const WidgetText({
     Key? key,

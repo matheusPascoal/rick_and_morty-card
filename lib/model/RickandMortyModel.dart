@@ -1,4 +1,4 @@
-class ChuckModel {
+class RickandMortyModel {
   int? id;
   String? name;
   String? status;
@@ -10,7 +10,7 @@ class ChuckModel {
   String? url;
   String? created;
 
-  ChuckModel(
+  RickandMortyModel(
       {this.id,
       this.name,
       this.status,
@@ -22,7 +22,7 @@ class ChuckModel {
       this.url,
       this.created});
 
-  ChuckModel.fromJson(Map<String, dynamic> json) {
+  RickandMortyModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
     status = json['status'];
